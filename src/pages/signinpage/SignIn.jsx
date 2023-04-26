@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './signin.css';
 
+
+axios.defaults.baseURL = "https://phantomdairy-api.onrender.com";
+
 function SignIn() {
 
 

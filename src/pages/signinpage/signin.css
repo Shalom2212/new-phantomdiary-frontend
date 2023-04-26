@@ -1,0 +1,129 @@
+.sign-form-container {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-heading{
+  color: #767070;
+}
+
+.inputcard-sign {
+  background-image: url('../../assets/inputb.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.blur-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #383635;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  background-color: #5c4f544a !important;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #383538 !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+input[type="password"],
+textarea {
+  background-color: #5c4f544a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+button[type="submit"] {
+  background-color: #0077b6;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #023e8a;
+}
+
+.caption {
+  color: #383538;
+  text-decoration: none;
+  text-align: center;
+}
+
+.caption a{
+  color: #2cc602;
+  text-decoration: none;
+}
+.state{
+  color: red;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .inputcard-sign{
+    width: 80%;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+

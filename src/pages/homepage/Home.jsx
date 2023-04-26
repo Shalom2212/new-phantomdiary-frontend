@@ -6,7 +6,7 @@ import axios from 'axios';
 import {useEffect,useState } from 'react';
 import React from 'react';
 
-const url = "http://localhost:5000/content";
+// const url = "http://localhost:5000/content";
 
 function Home(){
 
@@ -15,7 +15,7 @@ function Home(){
     const getDomainInfo = async () => {
         try {
             setLoading(true); // Set loading before sending API request
-            const res = await axios.get(url);
+            const res = await axios.get('/content');
             setContent(res.data); // Response received
             setLoading(false); // Stop loading
         } catch (error) {

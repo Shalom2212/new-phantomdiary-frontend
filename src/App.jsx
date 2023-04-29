@@ -8,7 +8,6 @@ import './App.css'
 function App() {
 
   return (
-    <div>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/inputcontent' element={<InputContent/>}/>
@@ -16,7 +15,6 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/random' element={<SignUp/>}/>
       </Routes>
-    </div>
     
   );
 }

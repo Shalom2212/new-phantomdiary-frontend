@@ -1,11 +1,12 @@
-import {useState,useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useState} from 'react';
+import { useNavigate,Link} from 'react-router-dom';
 import React from 'react';
 import axios from 'axios';
 import './signin.css';
 
 
 axios.defaults.baseURL = "https://phantomdairy-api.onrender.com";
+//axios.defaults.baseURL = "http://localhost:5000";
 
 function SignIn() {
 
@@ -105,7 +106,7 @@ function HandelClick(event){
         </form>
         {wrong ? <span className='state'>somthing went wrong</span> : null}
         <div className='caption'>
-          Don't have an account?<a href='/signup' >sign up</a>
+          Don't have an account?<Link to='/signup' >sign up</Link>
         </div>
         <br></br>
       </div>

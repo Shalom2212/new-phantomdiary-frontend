@@ -38,10 +38,30 @@
     margin-left: 5px;
   }
 
+  .admin{
+    background-color: green;
+    border-radius: 5px;
+    padding: 0px;
+    color: #f2f2f2;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .pin{
+    height: 17px;
+    padding-left: 60vw;
+  }
+
   @media (max-width: 600px){
     .card{
-       margin: 18px;
-      margin-inline: auto;
+       margin: 18px; 
+       margin-inline: auto;
+      /* margin: 15px;
+      margin-block: auto; */
+  }
+
+  .pin{
+    padding-left: 100px;
   }
 }
   

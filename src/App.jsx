@@ -13,7 +13,6 @@ function App() {
         <Route path='/inputcontent' element={<InputContent/>}/>
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>}/>
-        <Route path='/random' element={<SignUp/>}/>
       </Routes>
     
   );

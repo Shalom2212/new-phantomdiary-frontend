@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Cards from './Cards'
 import FloatingButton from './FloatingButton'
 import axios from 'axios';
-import {useEffect,useState } from 'react';
+import {useEffect,useReducer,useState } from 'react';
 import React from 'react';
 
 // const url = "http://localhost:5000/content";
@@ -47,6 +47,14 @@ function Home(){
                 </div>
              ):(
             <div>
+                <Cards
+                    item={{
+                        username:'Shalom',
+                        pin:true,
+                        title:'📏User Guidlines⚠️',
+                        content:'Please hide your identity and don\'t share any of your personal information😎 \n Be Respect full to everyone😄 \nNo Spamming ⚠️ Follow the Community Guidlines!!'
+                    }}
+                />
                 {cards}
             </div>
             )}

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 import "./signup.css"
@@ -123,7 +123,7 @@ function SignUp(){
           <button onClick={Handleclick} type="submit">SignUp</button>
         </form>
         <div className='caption'>
-          If you have already account?<a href='/signin'>sign in</a>
+          If you have already account?<Link to='/signin'>sign in</Link>
         </div>
         <br></br>
       </div>

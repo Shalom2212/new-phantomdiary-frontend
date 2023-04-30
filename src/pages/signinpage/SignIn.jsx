@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
 import React from 'react';
 import axios from 'axios';
 import './signin.css';
@@ -105,7 +105,7 @@ function HandelClick(event){
         </form>
         {wrong ? <span className='state'>somthing went wrong</span> : null}
         <div className='caption'>
-          Don't have an account?<a href='/signup' >sign up</a>
+          Don't have an account?<Link to='/signup' >sign up</Link>
         </div>
         <br></br>
       </div>
